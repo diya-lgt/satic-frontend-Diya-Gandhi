@@ -20,7 +20,7 @@ header h1 {
 }
 
 header h2 {
-    background-color: #6a0dad;
+    background-color: blue;
     color: white;
     padding: 15px 20px;
     border-radius: 0 0 5px 5px;
@@ -58,3 +58,4 @@ footer {
     margin: 20px 40px;
     border-radius: 5px;
 }
+
