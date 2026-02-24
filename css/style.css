@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,9 +12,6 @@ header {
     padding: 40px 20px;
 }
 
-.container {
-    margin: 20px 40px;
-}
 
 
 section {
@@ -35,67 +32,84 @@ section {
     width: 180px;
 }
 
+  .container{
+    padding-left: 25px;
+    padding-right: 50px;
+    margin-left: 2.5%;
+    margin-right:2.5%;
+}
 
 .button-group {
-    display: flex;
-    margin-top: 10px;
-    gap: 15px;
+background-color: white;
+  margin-top:15px;
+  display: flex;
+  gap:10px;
+  }
+
+.btn {
+  padding: 8px 18px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 2px solid black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-
-button {
-    padding: 10px 20px;   
-    border-radius: 6px;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
+.primary{
+    margin-top: 12px;
+    font-size: 20px;
 }
-
 
 .btn-primary {
-    background-color: #3b82f6;
-    color: white;
-    
+  background-color:#4a7bd9;
+  color:white;
 }
 
 .btn-primary:hover {
-    background-color: #2563eb;
+  background-color:blue;
 }
 
-.btn-primary:active {
-    background-color: #1d4ed8;
+.btn-primary-disabled{
+    cursor: none;
 }
 
+.btn-active-scale:active{
+  transform: scale(1.97);
+}
 
 .btn-secondary {
-    background-color: white;
-    color: #3b82f6;
-    border: 2px solid #3b82f6;
-}
-
-.btn-secondary:hover {
-    background-color: #3b82f6;
-    color: white;
-}
-
-.btn-secondary:active {
-    background-color: #2563eb;
-    
+ background-color: white;
 }
 
 
 button:disabled {
-    background-color: #9ca3af;
-    color: #e5e7eb;
-    cursor: not-allowed;
-    border: none;
+  background-color: #e6e6e6;
+  color:grey;
+  border-color: #bdbdbd;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.disabled{
+    opacity: 0.8;
+    cursor: none;
+    pointer-events: none;
+}
+
+.btn-active-sca:active{
+  transform: scale(0px);
 }
 
 
+
 footer {
-    background-color: #4a7bd9;
-    color: white;
+    background-color:blue;
+    color:white;
     text-align: center;
-    padding: 20px;
-} 
- 
+    padding: 15px 0;
+    margin-top: 40px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 5px;
+}
