@@ -58,9 +58,8 @@ button {
     
 }
 
-.btn-primary:hover: {
+.btn-primary:hover {
     background-color: #2563eb;
-    
 }
 
 .btn-primary:active {
@@ -74,10 +73,9 @@ button {
     border: 2px solid #3b82f6;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: #3b82f6;
     color: white;
-  
 }
 
 .btn-secondary:active {
@@ -101,7 +99,3 @@ footer {
     padding: 20px;
 } 
  
-
-
-
-
