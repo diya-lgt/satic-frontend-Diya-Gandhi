@@ -226,16 +226,7 @@ body{
   background:#eef2f6;
   font-family:Arial, sans-serif;
 }
-
-/* ===== CONTAINER ===== */
-.container{
-  max-width:900px;
-  margin:60px auto;
-  padding:30px;
-  background:white;
-  border-radius:12px;
-
-  /* modern shadow */
+{
   box-shadow:0 6px 20px rgba(0,0,0,0.08);
 }
 
@@ -244,13 +235,13 @@ body{
 
 }
 
-/* Form layout */
+
 .search-form{
   display:flex;
   max-width:1500px;
 }
 
-/* Input */
+
 .search-input{
   flex:1;
   padding:12px;
@@ -261,12 +252,12 @@ body{
   outline:none;
 }
 
-/* Focus state */
+
 .search-input:focus{
   border-color:blue;
 }
 
-/* Button */
+
 .search-btn{
   padding:12px 18px;
   border:none;
@@ -278,15 +269,14 @@ body{
 
 }
 
-/* Hover state */
 .search-btn:hover{
   background:#1e4e85;
 }
 
-/* Accessibility focus */
 .search-btn:focus{
   outline:3px solid #000;
 }
+
 
 
 
