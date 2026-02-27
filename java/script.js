@@ -17,3 +17,22 @@ navLinks.forEach(link => {
         body.classList.remove('no-scroll');
     });
 });
+const form = document.getElementById("searchForm");
+const input = document.getElementById("search");
+
+form.addEventListener("submit", function(event){
+  
+
+  event.preventDefault();
+
+  const value = input.value.trim();
+
+
+  if(value === ""){
+    alert("Please enter a search term.");
+    return;
+  }
+
+
+  console.log("Searching for:", value);
+});
