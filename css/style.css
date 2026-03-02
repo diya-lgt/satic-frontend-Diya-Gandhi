@@ -279,6 +279,7 @@ body{
 
 /*         my project        */
 
+
 .projects{
   padding:40px;
   background:#f5f7fa;
@@ -320,6 +321,8 @@ body{
   border-radius:10px;
   overflow:hidden;
   border:1px solid #ddd;
+
+
   display:flex;
   flex-direction:column;
 }
@@ -368,9 +371,4 @@ body{
   background:#2f6fb2;
   color:#fff;
 }
-
-
-
-
-
 
