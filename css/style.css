@@ -376,3 +376,147 @@ body{
 }
 
 
+/*        The Toast Notification System        */
+
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+
+.playground {
+  margin-top: 40px;
+}
+
+.button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.button.success {
+  background: #28a745;
+}
+
+.button.error {
+  background:  #dc3545;
+}
+
+
+#toast-container {
+  position: fixed;        
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.toast {
+  min-width: 280px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow:  0 6px 18px rgba(0,0,0,0.15);
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+
+.toast.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.toast.success {
+  background: #28a745;
+  color: #ffffff;
+}
+
+.toast.error {
+  background: #dc3545;
+  color:#ffffff;
+}
+
+
+.toast button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.toast-container {
+  position: fixed;     
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.toast {
+  min-width: 280px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+
+.toast.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.toast.success {
+  background-color: #e6f9f0;      
+  border-left: 5px solid #28a745; 
+  color: #28a745;
+}
+
+
+.toast.error {
+  background-color: #fdecea;     
+  border-left: 5px solid #dc3545; 
+  color: #dc3545;
+}
+
+
+.toast button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: inherit;
+}
+
+.toast button:hover {
+  opacity: 0.7;
+}
+
+
