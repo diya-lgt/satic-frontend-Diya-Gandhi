@@ -36,3 +36,57 @@ form.addEventListener("submit", function(event){
 
   console.log("Searching for:", value);
 });
+
+
+ const toastContainer = document.getElementById("toast-container");
+const successBtn = document.getElementById("successBtn");
+const errorBtn = document.getElementById("errorBtn");
+
+function createToast(type, message) {
+
+  const toast = document.createElement("div");
+  toast.classList.add("toast", type);
+
+  const icon = type === "success" ? "✔" : "⚠";
+
+  toast.innerHTML = `
+    <div>
+      <strong>${icon}</strong> ${message}
+    </div>
+    <button>&times;</button>
+  `;
+
+  toastContainer.appendChild(toast);
+
+
+  setTimeout(() => {
+    toast.classList.add("show");
+  }, 10);
+
+ 
+  const autoRemove = setTimeout(() => {
+    removeToast(toast);
+  }, 3000);
+
+ 
+  toast.querySelector("button").addEventListener("click", () => {
+    clearTimeout(autoRemove);
+    removeToast(toast);
+  });
+}
+
+function removeToast(toast) {
+  toast.classList.remove("show");
+  setTimeout(() => {
+    toast.remove();   
+  }, 400);
+}
+
+
+successBuntton.addEventListener("click", () => {
+  createToast("success", "Success: Project saved!");
+});
+
+errorBuntton.addEventListener("click", () => {
+  createToast("error", "Error: Failed to fetch data.");
+});
