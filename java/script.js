@@ -179,8 +179,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
 
 
-
-
 const backToTopBtn = document.getElementById("backToTopBtn");
 
 let isVisible = false;
