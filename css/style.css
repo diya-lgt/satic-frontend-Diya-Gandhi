@@ -673,6 +673,45 @@ main{
 
 }
 
+/***   The “Back to Top” Utility    ***/
+
+.back-to-top{
+
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  width:55px;
+  height:55px;
+  border:none;
+  border-radius:50%;
+  background:#4a7bd9;
+  color:white;
+  font-size:24px;
+  font-weight:bold;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 6px 15px rgba(0,0,0,0.25);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 0.3s ease, transform 0.3s ease;
+  z-index:900; 
+}
+
+
+.back-to-top.show-btn{
+  opacity:1;
+  pointer-events:auto;
+}
+
+
+.back-to-top:hover{
+  transform:translateY(-4px);
+}
+
+
+
 
 
 
