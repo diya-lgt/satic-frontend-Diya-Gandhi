@@ -38,6 +38,9 @@ form.addEventListener("submit", function(event){
 });
 
 
+
+
+
  const toastContainer = document.getElementById("toast-container");
 const successBtn = document.getElementById("successBtn");
 const errorBtn = document.getElementById("errorBtn");
@@ -90,6 +93,9 @@ successBuntton.addEventListener("click", () => {
 errorBuntton.addEventListener("click", () => {
   createToast("error", "Error: Failed to fetch data.");
 });
+
+
+
 
 
 
@@ -170,5 +176,42 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
 });
 
+
+
+
+
+
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+let isVisible = false;
+
+window.addEventListener("scroll", function(){
+
+  if(window.scrollY > 500){
+
+    if(!isVisible){
+      backToTopBtn.classList.add("show-btn");
+      isVisible = true;
+    }
+
+  }else{
+
+    if(isVisible){
+      backToTopBtn.classList.remove("show-btn");
+      isVisible = false;
+    }
+
+  }
+
+});
+
+backToTopBtn.addEventListener("click", function(){
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+});
 
 
