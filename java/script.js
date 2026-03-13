@@ -26,7 +26,7 @@ el.classList.add("active")
 window.addEventListener("scroll",reveal)
 
 
-/* CONTACT FORM VALIDATION */
+
 
 const form = document.getElementById("contact-form")
 
